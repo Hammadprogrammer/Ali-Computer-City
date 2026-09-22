@@ -1,1 +1,983 @@
 
+﻿﻿<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Computer City | Computers, Laptops & IT Services in Orangi Town Karachi</title>
+    <meta name="description" content="Ali Computer City in Sector 10 Orangi Town, Karachi offers computers, laptops, accessories, hardware upgrades, repairs and practical IT services. Contact us on WhatsApp or phone.">
+    <meta name="keywords" content="Ali Computer City, computer shop Orangi Town, laptop repair Karachi, computer accessories, RAM SSD upgrade, IT services Karachi">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Ali Computer City | Computers, Laptops & IT Services in Orangi Town Karachi">
+    <meta property="og:description" content="Your trusted local computer and technology store in Orangi Town, Karachi. Sales, repairs, upgrades, and accessories.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_PK">
+
+    <!-- External CSS & Icons -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkbase: '#0B0F19',
+                        carddark: '#131C2E',
+                        accentblue: '#0EA5E9',
+                        accenthover: '#0284C7',
+                        darkborder: '#1E293B'
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0B0F19;
+            color: #F8FAFC;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0B0F19;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1E293B;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0EA5E9;
+        }
+    </style>
+</head>
+<body class="bg-darkbase text-slate-100 antialiased selection:bg-accentblue selection:text-white">
+
+    <!-- Sticky Navigation -->
+    <header class="sticky top-0 z-50 bg-darkbase/90 backdrop-blur-md border-b border-darkborder">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-accentblue/10 border border-accentblue/30 flex items-center justify-center text-accentblue group-hover:bg-accentblue group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-microchip text-xl"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl font-bold tracking-tight text-white block">Ali Computer City</span>
+                        <span class="text-xs text-slate-400 tracking-wider block font-medium">Orangi Town, Karachi</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav Links -->
+                <nav class="hidden lg:flex items-center gap-8">
+                    <a href="#home" class="text-sm font-medium text-slate-300 hover:text-accentblue transition-colors">Home</a>
+                    <a href="#about" class="text-sm font-medium text-slate-300 hover:text-accentblue transition-colors">About</a>
+                    <a href="#products" class="text-sm font-medium text-slate-300 hover:text-accentblue transition-colors">Products</a>
+                    <a href="#services" class="text-sm font-medium text-slate-300 hover:text-accentblue transition-colors">Services</a>
+                    <a href="#accessories" class="text-sm font-medium text-slate-300 hover:text-accentblue transition-colors">Accessories</a>
+                    <a href="#why-us" class="text-sm font-medium text-slate-300 hover:text-accentblue transition-colors">Why Choose Us</a>
+                    <a href="#contact" class="text-sm font-medium text-slate-300 hover:text-accentblue transition-colors">Contact</a>
+                </nav>
+
+                <!-- WhatsApp Button & Mobile Toggle -->
+                <div class="flex items-center gap-4">
+                    <a href="https://wa.me/923158542654" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2.5 rounded-xl font-semibold text-sm transition-all shadow-lg shadow-emerald-900/20">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>WhatsApp Chat</span>
+                    </a>
+                    
+                    <button id="menu-btn" aria-label="Toggle Menu" class="lg:hidden text-slate-300 hover:text-white focus:outline-none p-2 rounded-lg bg-carddark border border-darkborder">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Drawer -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-carddark border-b border-darkborder px-4 pt-2 pb-6 space-y-3">
+            <a href="#home" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-300 hover:bg-darkbase hover:text-accentblue">Home</a>
+            <a href="#about" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-300 hover:bg-darkbase hover:text-accentblue">About</a>
+            <a href="#products" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-300 hover:bg-darkbase hover:text-accentblue">Products</a>
+            <a href="#services" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-300 hover:bg-darkbase hover:text-accentblue">Services</a>
+            <a href="#accessories" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-300 hover:bg-darkbase hover:text-accentblue">Accessories</a>
+            <a href="#why-us" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-300 hover:bg-darkbase hover:text-accentblue">Why Choose Us</a>
+            <a href="#contact" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-300 hover:bg-darkbase hover:text-accentblue">Contact</a>
+            <div class="pt-2">
+                <a href="https://wa.me/923158542654" target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-3 rounded-xl font-semibold text-sm transition-all shadow-lg shadow-emerald-900/20">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>WhatsApp Chat</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="relative overflow-hidden py-20 lg:py-32 bg-darkbase border-b border-darkborder">
+            <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-accentblue/10 via-darkbase to-darkbase pointer-events-none"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <div class="lg:col-span-7 space-y-8 text-left">
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-accentblue/10 border border-accentblue/25 text-accentblue text-xs font-semibold tracking-wide uppercase">
+                            <i class="fa-solid fa-location-dot"></i> Sector 10 Orangi Town, Karachi
+                        </div>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                            Your Local Computer & IT Store in <span class="text-accentblue">Orangi Town</span>
+                        </h1>
+                        <p class="text-lg text-slate-300 max-w-2xl leading-relaxed">
+                            Ali Computer City provides computers, laptops, accessories, hardware upgrades, repairs, and everyday IT solutions right here in Karachi. Get dependable technology products and reliable technical support close to home.
+                        </p>
+                        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+                            <a href="https://wa.me/923158542654" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 bg-accentblue hover:bg-accenthover text-white px-8 py-4 rounded-xl font-bold text-base transition-all shadow-xl shadow-accentblue/20">
+                                <i class="fa-brands fa-whatsapp text-xl"></i>
+                                <span>Chat on WhatsApp</span>
+                            </a>
+                            <a href="tel:+923158542654" class="inline-flex items-center justify-center gap-3 bg-carddark hover:bg-darkborder border border-darkborder text-white px-8 py-4 rounded-xl font-bold text-base transition-all">
+                                <i class="fa-solid fa-phone text-accentblue"></i>
+                                <span>Call 0315 8542654</span>
+                            </a>
+                        </div>
+                        <div class="grid grid-cols-3 gap-6 pt-6 border-t border-darkborder/60">
+                            <div>
+                                <span class="block text-2xl font-bold text-white">Computers</span>
+                                <span class="text-xs text-slate-400">Desktops & Laptops</span>
+                            </div>
+                            <div>
+                                <span class="block text-2xl font-bold text-white">Upgrades</span>
+                                <span class="text-xs text-slate-400">RAM & SSD Solutions</span>
+                            </div>
+                            <div>
+                                <span class="block text-2xl font-bold text-white">Repairs</span>
+                                <span class="text-xs text-slate-400">Troubleshooting & Care</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5">
+                        <div class="relative mx-auto max-w-md lg:max-w-none">
+                            <div class="absolute -inset-1.5 bg-gradient-to-r from-accentblue to-indigo-600 rounded-3xl blur opacity-30"></div>
+                            <div class="relative bg-carddark border border-darkborder rounded-3xl p-6 shadow-2xl overflow-hidden">
+                                <div class="flex items-center justify-between mb-6 pb-4 border-b border-darkborder">
+                                    <div class="flex items-center gap-2">
+                                        <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                                        <div class="w-3 h-3 rounded-full bg-amber-500"></div>
+                                        <div class="w-3 h-3 rounded-full bg-emerald-500"></div>
+                                    </div>
+                                    <span class="text-xs text-slate-400 font-mono">ali-computer-city.local</span>
+                                </div>
+                                <div class="space-y-4">
+                                    <div class="bg-darkbase p-4 rounded-xl border border-darkborder flex items-center gap-4">
+                                        <div class="w-12 h-12 rounded-lg bg-accentblue/10 flex items-center justify-center text-accentblue text-xl flex-shrink-0">
+                                            <i class="fa-solid fa-laptop"></i>
+                                        </div>
+                                        <div>
+                                            <h3 class="font-bold text-white text-sm">Laptops & Desktops</h3>
+                                            <p class="text-xs text-slate-400">Ready for work, studies, and gaming</p>
+                                        </div>
+                                    </div>
+                                    <div class="bg-darkbase p-4 rounded-xl border border-darkborder flex items-center gap-4">
+                                        <div class="w-12 h-12 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400 text-xl flex-shrink-0">
+                                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                                        </div>
+                                        <div>
+                                            <h3 class="font-bold text-white text-sm">Hardware & Repair</h3>
+                                            <p class="text-xs text-slate-400">Professional troubleshooting & fixes</p>
+                                        </div>
+                                    </div>
+                                    <div class="bg-darkbase p-4 rounded-xl border border-darkborder flex items-center gap-4">
+                                        <div class="w-12 h-12 rounded-lg bg-indigo-500/10 flex items-center justify-center text-indigo-400 text-xl flex-shrink-0">
+                                            <i class="fa-solid fa-memory"></i>
+                                        </div>
+                                        <div>
+                                            <h3 class="font-bold text-white text-sm">RAM & SSD Upgrades</h3>
+                                            <p class="text-xs text-slate-400">Boost your system speed instantly</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Ali Computer City -->
+        <section id="about" class="py-20 bg-carddark/50 border-b border-darkborder">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <div class="lg:col-span-6 space-y-6">
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-accentblue/10 border border-accentblue/25 text-accentblue text-xs font-semibold tracking-wide uppercase">
+                            About Our Shop
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+                            Your Trusted Technology Partner in Sector 10 Orangi Town
+                        </h2>
+                        <p class="text-slate-300 leading-relaxed">
+                            Ali Computer City is a dedicated local computer and technology shop located right in the heart of Rabbi Colony, Sector 10 Orangi Town, Karachi. We focus on providing straightforward, honest, and practical IT solutions for everyone in our community.
+                        </p>
+                        <p class="text-slate-300 leading-relaxed">
+                            Whether you need a reliable computer for your studies, a desktop for office work, essential peripherals, or quick hardware troubleshooting, our shop offers convenient access to everyday tech needs without hassle.
+                        </p>
+                        <div class="grid grid-cols-2 gap-4 pt-2">
+                            <div class="flex items-center gap-3 bg-darkbase p-4 rounded-xl border border-darkborder">
+                                <i class="fa-solid fa-check text-accentblue text-lg"></i>
+                                <span class="text-sm font-semibold text-white">Reliable Hardware Support</span>
+                            </div>
+                            <div class="flex items-center gap-3 bg-darkbase p-4 rounded-xl border border-darkborder">
+                                <i class="fa-solid fa-check text-accentblue text-lg"></i>
+                                <span class="text-sm font-semibold text-white">Local Neighborhood Access</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-6">
+                        <div class="bg-darkbase border border-darkborder rounded-3xl p-8 space-y-6 shadow-xl">
+                            <h3 class="text-xl font-bold text-white border-b border-darkborder pb-4 flex items-center gap-3">
+                                <i class="fa-solid fa-users text-accentblue"></i>
+                                Who We Serve
+                            </h3>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div class="p-4 rounded-xl bg-carddark border border-darkborder flex items-start gap-3">
+                                    <i class="fa-solid fa-house text-accentblue mt-1"></i>
+                                    <div>
+                                        <h4 class="font-bold text-white text-sm">Home Users</h4>
+                                        <p class="text-xs text-slate-400 mt-1">Everyday browsing, media, and family computer requirements.</p>
+                                    </div>
+                                </div>
+                                <div class="p-4 rounded-xl bg-carddark border border-darkborder flex items-start gap-3">
+                                    <i class="fa-solid fa-graduation-cap text-accentblue mt-1"></i>
+                                    <div>
+                                        <h4 class="font-bold text-white text-sm">Students</h4>
+                                        <p class="text-xs text-slate-400 mt-1">Laptops, research setups, assignment printing, and accessories.</p>
+                                    </div>
+                                </div>
+                                <div class="p-4 rounded-xl bg-carddark border border-darkborder flex items-start gap-3">
+                                    <i class="fa-solid fa-building text-accentblue mt-1"></i>
+                                    <div>
+                                        <h4 class="font-bold text-white text-sm">Office Users</h4>
+                                        <p class="text-xs text-slate-400 mt-1">Workstations, networking gear, and office printer support.</p>
+                                    </div>
+                                </div>
+                                <div class="p-4 rounded-xl bg-carddark border border-darkborder flex items-start gap-3">
+                                    <i class="fa-solid fa-briefcase text-accentblue mt-1"></i>
+                                    <div>
+                                        <h4 class="font-bold text-white text-sm">Small Businesses & Freelancers</h4>
+                                        <p class="text-xs text-slate-400 mt-1">Reliable performance hardware and quick technical assistance.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Categories -->
+        <section id="products" class="py-20 bg-darkbase border-b border-darkborder">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-accentblue/10 border border-accentblue/25 text-accentblue text-xs font-semibold tracking-wide uppercase">
+                        Product Categories
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+                        Explore Our Technology Products
+                    </h2>
+                    <p class="text-slate-300">
+                        We stock a wide variety of computers, laptops, components, and peripherals suited for everyday computing, work, and study.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Category 1 -->
+                    <div class="bg-carddark border border-darkborder rounded-2xl p-6 hover:border-accentblue/50 transition-all duration-300 group">
+                        <div class="w-12 h-12 rounded-xl bg-accentblue/10 border border-accentblue/20 flex items-center justify-center text-accentblue text-xl mb-4 group-hover:bg-accentblue group-hover:text-white transition-all">
+                            <i class="fa-solid fa-laptop"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Laptops</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Reliable portable computers for students, professionals, and daily home use.</p>
+                    </div>
+                    <!-- Category 2 -->
+                    <div class="bg-carddark border border-darkborder rounded-2xl p-6 hover:border-accentblue/50 transition-all duration-300 group">
+                        <div class="w-12 h-12 rounded-xl bg-accentblue/10 border border-accentblue/20 flex items-center justify-center text-accentblue text-xl mb-4 group-hover:bg-accentblue group-hover:text-white transition-all">
+                            <i class="fa-solid fa-desktop"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Desktop Computers</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Custom-built and branded desktop systems configured for reliable performance.</p>
+                    </div>
+                    <!-- Category 3 -->
+                    <div class="bg-carddark border border-darkborder rounded-2xl p-6 hover:border-accentblue/50 transition-all duration-300 group">
+                        <div class="w-12 h-12 rounded-xl bg-accentblue/10 border border-accentblue/20 flex items-center justify-center text-accentblue text-xl mb-4 group-hover:bg-accentblue group-hover:text-white transition-all">
+                            <i class="fa-solid fa-microchip"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Computer Components</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Processors, motherboards, power supplies, and essential internal hardware.</p>
+                    </div>
+                    <!-- Category 4 -->
+                    <div class="bg-carddark border border-darkborder rounded-2xl p-6 hover:border-accentblue/50 transition-all duration-300 group">
+                        <div class="w-12 h-12 rounded-xl bg-accentblue/10 border border-accentblue/20 flex items-center justify-center text-accentblue text-xl mb-4 group-hover:bg-accentblue group-hover:text-white transition-all">
+                            <i class="fa-solid fa-memory"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">RAM & SSD</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">High-speed memory modules and solid-state drives for speed upgrades.</p>
+                    </div>
+                    <!-- Category 5 -->
+                    <div class="bg-carddark border border-darkborder rounded-2xl p-6 hover:border-accentblue/50 transition-all duration-300 group">
+                        <div class="w-12 h-12 rounded-xl bg-accentblue/10 border border-accentblue/20 flex items-center justify-center text-accentblue text-xl mb-4 group-hover:bg-accentblue group-hover:text-white transition-all">
+                            <i class="fa-solid fa-keyboard"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Keyboards & Mice</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Wired and wireless keyboards, optical mice, and ergonomic gaming sets.</p>
+                    </div>
+                    <!-- Category 6 -->
+                    <div class="bg-carddark border border-darkborder rounded-2xl p-6 hover:border-accentblue/50 transition-all duration-300 group">
+                        <div class="w-12 h-12 rounded-xl bg-accentblue/10 border border-accentblue/20 flex items-center justify-center text-accentblue text-xl mb-4 group-hover:bg-accentblue group-hover:text-white transition-all">
+                            <i class="fa-solid fa-tv"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Monitors</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Clear display screens for office workstations, gaming, and home entertainment.</p>
+                    </div>
+                    <!-- Category 7 -->
+                    <div class="bg-carddark border border-darkborder rounded-2xl p-6 hover:border-accentblue/50 transition-all duration-300 group">
+                        <div class="w-12 h-12 rounded-xl bg-accentblue/10 border border-accentblue/20 flex items-center justify-center text-accentblue text-xl mb-4 group-hover:bg-accentblue group-hover:text-white transition-all">
+                            <i class="fa-solid fa-print"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Printers</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Reliable inkjet and laser printers for home study and office documentation.</p>
+                    </div>
+                    <!-- Category 8 -->
+                    <div class="bg-carddark border border-darkborder rounded-2xl p-6 hover:border-accentblue/50 transition-all duration-300 group">
+                        <div class="w-12 h-12 rounded-xl bg-accentblue/10 border border-accentblue/20 flex items-center justify-center text-accentblue text-xl mb-4 group-hover:bg-accentblue group-hover:text-white transition-all">
+                            <i class="fa-solid fa-headphones"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Headphones & Speakers</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Audio accessories for clear communication, online classes, and media.</p>
+                    </div>
+                    <!-- Category 9 -->
+                    <div class="bg-carddark border border-darkborder rounded-2xl p-6 hover:border-accentblue/50 transition-all duration-300 group">
+                        <div class="w-12 h-12 rounded-xl bg-accentblue/10 border border-accentblue/20 flex items-center justify-center text-accentblue text-xl mb-4 group-hover:bg-accentblue group-hover:text-white transition-all">
+                            <i class="fa-solid fa-plug"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Cables & Adapters</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">HDMI cables, power cords, USB extension connectors, and display adapters.</p>
+                    </div>
+                    <!-- Category 10 -->
+                    <div class="bg-carddark border border-darkborder rounded-2xl p-6 hover:border-accentblue/50 transition-all duration-300 group">
+                        <div class="w-12 h-12 rounded-xl bg-accentblue/10 border border-accentblue/20 flex items-center justify-center text-accentblue text-xl mb-4 group-hover:bg-accentblue group-hover:text-white transition-all">
+                            <i class="fa-solid fa-network-wired"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Networking Devices</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Wi-Fi routers, network switches, LAN cables, and wireless adapters.</p>
+                    </div>
+                    <!-- Category 11 -->
+                    <div class="bg-carddark border border-darkborder rounded-2xl p-6 hover:border-accentblue/50 transition-all duration-300 group">
+                        <div class="w-12 h-12 rounded-xl bg-accentblue/10 border border-accentblue/20 flex items-center justify-center text-accentblue text-xl mb-4 group-hover:bg-accentblue group-hover:text-white transition-all">
+                            <i class="fa-solid fa-hard-drive"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">USB & Storage Devices</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">USB flash drives and external hard drives for convenient data backup.</p>
+                    </div>
+                    <!-- Category 12 -->
+                    <div class="bg-carddark border border-darkborder rounded-2xl p-6 hover:border-accentblue/50 transition-all duration-300 group">
+                        <div class="w-12 h-12 rounded-xl bg-accentblue/10 border border-accentblue/20 flex items-center justify-center text-accentblue text-xl mb-4 group-hover:bg-accentblue group-hover:text-white transition-all">
+                            <i class="fa-solid fa-toolbox"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Computer Accessories</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Mouse pads, cooling pads, webcams, and other practical desktop add-ons.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Computer & IT Services -->
+        <section id="services" class="py-20 bg-carddark/50 border-b border-darkborder">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-accentblue/10 border border-accentblue/25 text-accentblue text-xs font-semibold tracking-wide uppercase">
+                        Professional Services
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+                        Computer & IT Services
+                    </h2>
+                    <p class="text-slate-300">
+                        From system troubleshooting to hardware upgrades and software setup, we provide efficient solutions to keep your technology running smoothly.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Service 1 -->
+                    <div class="bg-darkbase border border-darkborder rounded-2xl p-6 flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-accentblue/10 border border-accentblue/20 flex items-center justify-center text-accentblue text-lg flex-shrink-0 mt-1">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-white mb-1">Computer Repair</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">Diagnostic and repair services for desktop computer hardware issues.</p>
+                        </div>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="bg-darkbase border border-darkborder rounded-2xl p-6 flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-accentblue/10 border border-accentblue/20 flex items-center justify-center text-accentblue text-lg flex-shrink-0 mt-1">
+                            <i class="fa-solid fa-laptop-medical"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-white mb-1">Laptop Troubleshooting</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">Fixing display problems, charging issues, and keyboard failures.</p>
+                        </div>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="bg-darkbase border border-darkborder rounded-2xl p-6 flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-accentblue/10 border border-accentblue/20 flex items-center justify-center text-accentblue text-lg flex-shrink-0 mt-1">
+                            <i class="fa-brands fa-windows"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-white mb-1">Windows Installation</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">Clean operating system installation, driver setup, and updates.</p>
+                        </div>
+                    </div>
+                    <!-- Service 4 -->
+                    <div class="bg-darkbase border border-darkborder rounded-2xl p-6 flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-accentblue/10 border border-accentblue/20 flex items-center justify-center text-accentblue text-lg flex-shrink-0 mt-1">
+                            <i class="fa-solid fa-box-archive"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-white mb-1">Software Installation</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">Setting up office applications, utilities, and productivity software.</p>
+                        </div>
+                    </div>
+                    <!-- Service 5 -->
+                    <div class="bg-darkbase border border-darkborder rounded-2xl p-6 flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-accentblue/10 border border-accentblue/20 flex items-center justify-center text-accentblue text-lg flex-shrink-0 mt-1">
+                            <i class="fa-solid fa-shield-virus"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-white mb-1">Virus & Malware Troubleshooting</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">Removing malicious software and securing your system against threats.</p>
+                        </div>
+                    </div>
+                    <!-- Service 6 -->
+                    <div class="bg-darkbase border border-darkborder rounded-2xl p-6 flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-accentblue/10 border border-accentblue/20 flex items-center justify-center text-accentblue text-lg flex-shrink-0 mt-1">
+                            <i class="fa-solid fa-memory"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-white mb-1">RAM Upgrade</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">Enhancing multitasking performance by installing compatible RAM sticks.</p>
+                        </div>
+                    </div>
+                    <!-- Service 7 -->
+                    <div class="bg-darkbase border border-darkborder rounded-2xl p-6 flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-accentblue/10 border border-accentblue/20 flex items-center justify-center text-accentblue text-lg flex-shrink-0 mt-1">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-white mb-1">SSD Upgrade</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">Replacing old hard drives with fast SSDs for rapid boot and load times.</p>
+                        </div>
+                    </div>
+                    <!-- Service 8 -->
+                    <div class="bg-darkbase border border-darkborder rounded-2xl p-6 flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-accentblue/10 border border-accentblue/20 flex items-center justify-center text-accentblue text-lg flex-shrink-0 mt-1">
+                            <i class="fa-solid fa-gears"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-white mb-1">Hardware Replacement</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">Swapping faulty parts including power supplies, fans, and screens.</p>
+                        </div>
+                    </div>
+                    <!-- Service 9 -->
+                    <div class="bg-darkbase border border-darkborder rounded-2xl p-6 flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-accentblue/10 border border-accentblue/20 flex items-center justify-center text-accentblue text-lg flex-shrink-0 mt-1">
+                            <i class="fa-solid fa-broom"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-white mb-1">Computer Cleaning & Maintenance</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">Removing dust buildup and applying thermal paste for cooler running.</p>
+                        </div>
+                    </div>
+                    <!-- Service 10 -->
+                    <div class="bg-darkbase border border-darkborder rounded-2xl p-6 flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-accentblue/10 border border-accentblue/20 flex items-center justify-center text-accentblue text-lg flex-shrink-0 mt-1">
+                            <i class="fa-solid fa-print"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-white mb-1">Printer Setup</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">Configuring printer drivers and network connections for smooth printing.</p>
+                        </div>
+                    </div>
+                    <!-- Service 11 -->
+                    <div class="bg-darkbase border border-darkborder rounded-2xl p-6 flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-accentblue/10 border border-accentblue/20 flex items-center justify-center text-accentblue text-lg flex-shrink-0 mt-1">
+                            <i class="fa-solid fa-wifi"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-white mb-1">Networking Setup</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">Configuring Wi-Fi routers, LAN connections, and home networks.</p>
+                        </div>
+                    </div>
+                    <!-- Service 12 -->
+                    <div class="bg-darkbase border border-darkborder rounded-2xl p-6 flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-accentblue/10 border border-accentblue/20 flex items-center justify-center text-accentblue text-lg flex-shrink-0 mt-1">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-white mb-1">General IT Support</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed">Technical guidance and assistance for all your everyday computer queries.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Technology Section -->
+        <section class="py-20 bg-darkbase border-b border-darkborder">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-accentblue/10 border border-accentblue/25 text-accentblue text-xs font-semibold tracking-wide uppercase">
+                        Tailored Solutions
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+                        Choosing the Right Technology
+                    </h2>
+                    <p class="text-slate-300">
+                        Not sure what specification fits your work or study needs? We help customers select the right computer setups and upgrades based on practical requirements.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Setup 1 -->
+                    <div class="bg-carddark border border-darkborder rounded-2xl p-6 space-y-3">
+                        <div class="w-10 h-10 rounded-lg bg-accentblue/10 text-accentblue flex items-center justify-center font-bold">01</div>
+                        <h3 class="text-lg font-bold text-white">Student Setup</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Reliable laptops or budget desktops configured for online classes, research, assignments, and smooth daily coursework.</p>
+                    </div>
+                    <!-- Setup 2 -->
+                    <div class="bg-carddark border border-darkborder rounded-2xl p-6 space-y-3">
+                        <div class="w-10 h-10 rounded-lg bg-accentblue/10 text-accentblue flex items-center justify-center font-bold">02</div>
+                        <h3 class="text-lg font-bold text-white">Home Computer Setup</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">User-friendly systems ideal for family media, web browsing, home administration, and general entertainment.</p>
+                    </div>
+                    <!-- Setup 3 -->
+                    <div class="bg-carddark border border-darkborder rounded-2xl p-6 space-y-3">
+                        <div class="w-10 h-10 rounded-lg bg-accentblue/10 text-accentblue flex items-center justify-center font-bold">03</div>
+                        <h3 class="text-lg font-bold text-white">Office Workstation</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Stable desktop builds optimized for multitasking, accounting software, documentation, and office productivity.</p>
+                    </div>
+                    <!-- Setup 4 -->
+                    <div class="bg-carddark border border-darkborder rounded-2xl p-6 space-y-3">
+                        <div class="w-10 h-10 rounded-lg bg-accentblue/10 text-accentblue flex items-center justify-center font-bold">04</div>
+                        <h3 class="text-lg font-bold text-white">Gaming-Oriented Setup</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Performance-focused configurations with capable processors, dedicated graphics support, and cooling hardware.</p>
+                    </div>
+                    <!-- Setup 5 -->
+                    <div class="bg-carddark border border-darkborder rounded-2xl p-6 space-y-3">
+                        <div class="w-10 h-10 rounded-lg bg-accentblue/10 text-accentblue flex items-center justify-center font-bold">05</div>
+                        <h3 class="text-lg font-bold text-white">Storage Upgrade</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Expanding file capacity or adding solid-state drives to secure important data and improve system responsiveness.</p>
+                    </div>
+                    <!-- Setup 6 -->
+                    <div class="bg-carddark border border-darkborder rounded-2xl p-6 space-y-3">
+                        <div class="w-10 h-10 rounded-lg bg-accentblue/10 text-accentblue flex items-center justify-center font-bold">06</div>
+                        <h3 class="text-lg font-bold text-white">Performance Upgrade</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Upgrading RAM and optimizing software environments to breathe new life into older laptops and desktops.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Accessories Section -->
+        <section id="accessories" class="py-20 bg-carddark/50 border-b border-darkborder">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-accentblue/10 border border-accentblue/25 text-accentblue text-xs font-semibold tracking-wide uppercase">
+                        Peripherals & Add-ons
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+                        Essential Computer Accessories
+                    </h2>
+                    <p class="text-slate-300">
+                        Equip your workstation with dependable accessories and connection tools available at our shop.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 mb-12">
+                    <div class="bg-darkbase border border-darkborder rounded-xl p-4 text-center space-y-2 hover:border-accentblue/40 transition-all">
+                        <i class="fa-solid fa-keyboard text-accentblue text-2xl"></i>
+                        <h4 class="font-bold text-white text-sm">Keyboard</h4>
+                    </div>
+                    <div class="bg-darkbase border border-darkborder rounded-xl p-4 text-center space-y-2 hover:border-accentblue/40 transition-all">
+                        <i class="fa-solid fa-computer-mouse text-accentblue text-2xl"></i>
+                        <h4 class="font-bold text-white text-sm">Mouse</h4>
+                    </div>
+                    <div class="bg-darkbase border border-darkborder rounded-xl p-4 text-center space-y-2 hover:border-accentblue/40 transition-all">
+                        <i class="fa-solid fa-database text-accentblue text-2xl"></i>
+                        <h4 class="font-bold text-white text-sm">USB Flash Drive</h4>
+                    </div>
+                    <div class="bg-darkbase border border-darkborder rounded-xl p-4 text-center space-y-2 hover:border-accentblue/40 transition-all">
+                        <i class="fa-solid fa-hard-drive text-accentblue text-2xl"></i>
+                        <h4 class="font-bold text-white text-sm">External Storage</h4>
+                    </div>
+                    <div class="bg-darkbase border border-darkborder rounded-xl p-4 text-center space-y-2 hover:border-accentblue/40 transition-all">
+                        <i class="fa-solid fa-bolt text-accentblue text-2xl"></i>
+                        <h4 class="font-bold text-white text-sm">HDMI/Display Cables</h4>
+                    </div>
+                    <div class="bg-darkbase border border-darkborder rounded-xl p-4 text-center space-y-2 hover:border-accentblue/40 transition-all">
+                        <i class="fa-solid fa-plug text-accentblue text-2xl"></i>
+                        <h4 class="font-bold text-white text-sm">Laptop Chargers</h4>
+                    </div>
+                    <div class="bg-darkbase border border-darkborder rounded-xl p-4 text-center space-y-2 hover:border-accentblue/40 transition-all">
+                        <i class="fa-solid fa-snowflake text-accentblue text-2xl"></i>
+                        <h4 class="font-bold text-white text-sm">Cooling Accessories</h4>
+                    </div>
+                    <div class="bg-darkbase border border-darkborder rounded-xl p-4 text-center space-y-2 hover:border-accentblue/40 transition-all">
+                        <i class="fa-solid fa-headset text-accentblue text-2xl"></i>
+                        <h4 class="font-bold text-white text-sm">Headsets</h4>
+                    </div>
+                    <div class="bg-darkbase border border-darkborder rounded-xl p-4 text-center space-y-2 hover:border-accentblue/40 transition-all">
+                        <i class="fa-solid fa-video text-accentblue text-2xl"></i>
+                        <h4 class="font-bold text-white text-sm">Webcams</h4>
+                    </div>
+                    <div class="bg-darkbase border border-darkborder rounded-xl p-4 text-center space-y-2 hover:border-accentblue/40 transition-all">
+                        <i class="fa-solid fa-power-off text-accentblue text-2xl"></i>
+                        <h4 class="font-bold text-white text-sm">Power & Connectivity</h4>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <a href="https://wa.me/923158542654" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white px-8 py-4 rounded-xl font-bold text-base transition-all shadow-xl shadow-emerald-900/20">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        <span>Ask About Availability</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Ali Computer City -->
+        <section id="why-us" class="py-20 bg-darkbase border-b border-darkborder">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-accentblue/10 border border-accentblue/25 text-accentblue text-xs font-semibold tracking-wide uppercase">
+                        Why Choose Us
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+                        Your Dependable Local Computer Shop
+                    </h2>
+                    <p class="text-slate-300">
+                        We pride ourselves on offering convenient local service, transparent communication, and practical technology assistance.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-carddark border border-darkborder rounded-2xl p-6 space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-accentblue/10 text-accentblue flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-location-crosshairs"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Local Orangi Town Convenience</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Conveniently situated in Sector 10 Rabbi Colony, making it easy to visit for purchases and quick support.</p>
+                    </div>
+                    <div class="bg-carddark border border-darkborder rounded-2xl p-6 space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-accentblue/10 text-accentblue flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Practical Computer Solutions</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Honest recommendations and functional setups tailored to your actual requirements and budget.</p>
+                    </div>
+                    <div class="bg-carddark border border-darkborder rounded-2xl p-6 space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-accentblue/10 text-accentblue flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-boxes-stacked"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Wide Range of Categories</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">From laptops and components to cables and accessories, find diverse tech items in one place.</p>
+                    </div>
+                    <div class="bg-carddark border border-darkborder rounded-2xl p-6 space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-accentblue/10 text-accentblue flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Hardware Upgrade Support</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Professional assistance with RAM, SSD, and hardware component installations.</p>
+                    </div>
+                    <div class="bg-carddark border border-darkborder rounded-2xl p-6 space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-accentblue/10 text-accentblue flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-stethoscope"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Repair & Troubleshooting</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Reliable diagnostic checking and repair work for desktop computers and laptops.</p>
+                    </div>
+                    <div class="bg-carddark border border-darkborder rounded-2xl p-6 space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-accentblue/10 text-accentblue flex items-center justify-center text-xl">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Easy WhatsApp Communication</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Quickly ask questions, check product availability, or discuss repair queries directly over chat.</p>
+                    </div>
+                    <div class="bg-carddark border border-darkborder rounded-2xl p-6 space-y-4 sm:col-span-2">
+                        <div class="w-12 h-12 rounded-xl bg-accentblue/10 text-accentblue flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-face-smile"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white">Customer-Focused Service</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Friendly and courteous assistance ensuring every customer receives clear guidance and dependable support for their computing needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Simple Process -->
+        <section class="py-20 bg-carddark/50 border-b border-darkborder">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-accentblue/10 border border-accentblue/25 text-accentblue text-xs font-semibold tracking-wide uppercase">
+                        Simple Process
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+                        How to Get Started
+                    </h2>
+                    <p class="text-slate-300">
+                        Connecting with us for products, repairs, or upgrades is quick and straightforward.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Step 1 -->
+                    <div class="bg-darkbase border border-darkborder rounded-2xl p-6 relative">
+                        <div class="text-accentblue font-mono font-bold text-3xl mb-4">01</div>
+                        <h3 class="text-lg font-bold text-white mb-2">Tell Us What You Need</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Contact the shop through WhatsApp or phone to share your technology requirement.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="bg-darkbase border border-darkborder rounded-2xl p-6 relative">
+                        <div class="text-accentblue font-mono font-bold text-3xl mb-4">02</div>
+                        <h3 class="text-lg font-bold text-white mb-2">Discuss Your Requirement</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Share your computer, laptop, accessory, repair, or upgrade requirement.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="bg-darkbase border border-darkborder rounded-2xl p-6 relative">
+                        <div class="text-accentblue font-mono font-bold text-3xl mb-4">03</div>
+                        <h3 class="text-lg font-bold text-white mb-2">Get the Right Solution</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Discuss suitable products or services matching your specifications.</p>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="bg-darkbase border border-darkborder rounded-2xl p-6 relative">
+                        <div class="text-accentblue font-mono font-bold text-3xl mb-4">04</div>
+                        <h3 class="text-lg font-bold text-white mb-2">Visit / Proceed</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Visit the shop in Orangi Town or continue the service discussion conveniently.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-darkbase">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-accentblue/10 border border-accentblue/25 text-accentblue text-xs font-semibold tracking-wide uppercase">
+                        Get In Touch
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+                        Visit Our Shop or Contact Us
+                    </h2>
+                    <p class="text-slate-300">
+                        We are ready to assist you with your computer sales, accessories, upgrades, and repair inquiries.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    <!-- Contact Details & Action Buttons -->
+                    <div class="lg:col-span-6 space-y-8">
+                        <div class="bg-carddark border border-darkborder rounded-3xl p-8 space-y-6">
+                            <h3 class="text-2xl font-bold text-white">Ali Computer City</h3>
+                            
+                            <div class="space-y-4">
+                                <div class="flex items-start gap-4">
+                                    <div class="w-10 h-10 rounded-xl bg-accentblue/10 text-accentblue flex items-center justify-center flex-shrink-0 mt-1">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-white text-sm">Shop Address</h4>
+                                        <p class="text-slate-300 text-sm mt-1">Sector 10-L Rabbi Colony, Sector 10 Orangi Town, Karachi, Pakistan</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <div class="w-10 h-10 rounded-xl bg-accentblue/10 text-accentblue flex items-center justify-center flex-shrink-0 mt-1">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-white text-sm">Phone Number</h4>
+                                        <p class="text-slate-300 text-sm mt-1">03158542654</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-4">
+                                    <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center flex-shrink-0 mt-1">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-white text-sm">WhatsApp</h4>
+                                        <p class="text-slate-300 text-sm mt-1">+923158542654</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pt-4 border-t border-darkborder flex flex-col sm:flex-row gap-4">
+                                <a href="tel:+923158542654" class="flex-1 inline-flex items-center justify-center gap-2 bg-accentblue hover:bg-accenthover text-white px-6 py-3.5 rounded-xl font-bold text-sm transition-all shadow-lg shadow-accentblue/20">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <span>Call Now</span>
+                                </a>
+                                <a href="https://wa.me/923158542654" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-3.5 rounded-xl font-bold text-sm transition-all shadow-lg shadow-emerald-900/20">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                    <span>WhatsApp</span>
+                                </a>
+                            </div>
+
+                            <div class="pt-2">
+                                <a href="https://www.google.com/maps/search/?api=1&query=Ali+Computer+City%2C+Sector+10-L+Rabbi+Colony%2C+Sector+10+Orangi+Town%2C+Karachi%2C+Pakistan" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 bg-darkbase hover:bg-darkborder border border-darkborder text-white px-6 py-3.5 rounded-xl font-bold text-sm transition-all">
+                                    <i class="fa-solid fa-map-location-dot text-accentblue"></i>
+                                    <span>Get Directions</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Direct Inquiry Form -->
+                    <div class="lg:col-span-6">
+                        <div class="bg-carddark border border-darkborder rounded-3xl p-8 space-y-6">
+                            <h3 class="text-xl font-bold text-white">Send Quick Inquiry</h3>
+                            <p class="text-slate-400 text-sm">Have a specific question about a computer, laptop, or repair service? Send us a message directly.</p>
+                            
+                            <form id="contact-form" class="space-y-4" onsubmit="handleFormSubmit(event)">
+                                <div>
+                                    <label for="name" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
+                                    <input type="text" id="name" required class="w-full bg-darkbase border border-darkborder rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-accentblue transition-colors" placeholder="Enter your name">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Phone Number</label>
+                                    <input type="tel" id="phone" required class="w-full bg-darkbase border border-darkborder rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-accentblue transition-colors" placeholder="Enter your phone number">
+                                </div>
+                                <div>
+                                    <label for="message" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Requirement / Message</label>
+                                    <textarea id="message" rows="4" required class="w-full bg-darkbase border border-darkborder rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-accentblue transition-colors" placeholder="Describe your computer, repair, or accessory requirement..."></textarea>
+                                </div>
+                                <button type="submit" class="w-full bg-accentblue hover:bg-accenthover text-white py-3.5 rounded-xl font-bold text-sm transition-all shadow-lg shadow-accentblue/20">
+                                    Send Inquiry via WhatsApp
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-carddark border-t border-darkborder py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Col 1 -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-lg bg-accentblue/10 border border-accentblue/30 flex items-center justify-center text-accentblue">
+                            <i class="fa-solid fa-microchip text-sm"></i>
+                        </div>
+                        <span class="text-lg font-bold tracking-tight text-white">Ali Computer City</span>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Your trustworthy local computer and technology shop serving customers around Sector 10 Orangi Town, Karachi.
+                    </p>
+                </div>
+                <!-- Col 2 -->
+                <div class="space-y-4">
+                    <h4 class="font-bold text-white text-sm uppercase tracking-wider">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#home" class="text-slate-400 hover:text-accentblue transition-colors">Home</a></li>
+                        <li><a href="#about" class="text-slate-400 hover:text-accentblue transition-colors">About Us</a></li>
+                        <li><a href="#products" class="text-slate-400 hover:text-accentblue transition-colors">Products</a></li>
+                        <li><a href="#services" class="text-slate-400 hover:text-accentblue transition-colors">Services</a></li>
+                    </ul>
+                </div>
+                <!-- Col 3 -->
+                <div class="space-y-4">
+                    <h4 class="font-bold text-white text-sm uppercase tracking-wider">Support</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#accessories" class="text-slate-400 hover:text-accentblue transition-colors">Accessories</a></li>
+                        <li><a href="#why-us" class="text-slate-400 hover:text-accentblue transition-colors">Why Choose Us</a></li>
+                        <li><a href="#contact" class="text-slate-400 hover:text-accentblue transition-colors">Contact</a></li>
+                        <li><a href="https://wa.me/923158542654" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-accentblue transition-colors">WhatsApp Support</a></li>
+                    </ul>
+                </div>
+                <!-- Col 4 -->
+                <div class="space-y-4">
+                    <h4 class="font-bold text-white text-sm uppercase tracking-wider">Contact Info</h4>
+                    <div class="space-y-2 text-sm text-slate-400">
+                        <p>Sector 10-L Rabbi Colony, Sector 10 Orangi Town, Karachi, Pakistan</p>
+                        <p>Phone: 03158542654</p>
+                        <p>WhatsApp: +923158542654</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-darkborder flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+                <p>&copy; 2026 Ali Computer City. All rights reserved.</p>
+                <p>Orangi Town, Karachi, Pakistan</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to Top" class="fixed bottom-6 right-6 z-40 bg-accentblue hover:bg-accenthover text-white w-12 h-12 rounded-2xl shadow-xl flex items-center justify-center transition-all duration-300 opacity-0 pointer-events-none">
+        <i class="fa-solid fa-arrow-up text-lg"></i>
+    </button>
+
+    <!-- JavaScript Interactions -->
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Back to Top Button Logic
+        const backToTopBtn = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) {
+                backToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+                backToTopBtn.classList.add('opacity-100', 'pointer-events-auto');
+            } else {
+                backToTopBtn.classList.remove('opacity-100', 'pointer-events-auto');
+                backToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Form submission via WhatsApp
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            const text = `Hello Ali Computer City,%0A%0AMy Name: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AMessage: ${encodeURIComponent(message)}`;
+            const whatsappUrl = `https://wa.me/923158542654?text=${text}`;
+            
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
